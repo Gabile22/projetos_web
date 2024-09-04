@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcc7e2;
+    min-height: 100vh;
+}
+
+form {
+background-color: rgb(221, 109, 171);
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 2px 5px rgb(138, 64, 105);
+}
+label {
+    display: block;
+    margin-block: 5px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(250, 151, 201);
+    border-radius: 3px;
+}
+textarea {
+    height: 120px;
+}
+button {
+    background-color: #eca0cf;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 15px;
+    border: none; /* sem borda*/
+    cursor: pointer;/*altera o cursor do mouse*/
+}
+button:hover {
+    background-color: rgb(245, 180, 213);
+}
