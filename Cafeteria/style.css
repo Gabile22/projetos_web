@@ -1,0 +1,135 @@
+body{
+    background-image: url(imagens/Untitled\ design\ \(3\).png);
+    background-repeat: no-repeat;
+    height: 2000px;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+}
+.logo{
+    align-items: center;
+    margin-top:5px;
+}
+.data{
+    font-family: SUSE;
+    font-size: 17px;
+    text-align: center;
+    padding: 0;
+}
+.cafe {
+    font-family: Oswald;
+    font-size: 30px;
+    color: #5c4339;
+    text-align: left;
+    width: 70%;
+}
+.preco{
+    font-family: Oswald;
+    font-size: 25px;
+    text-align: right;
+    width: 30%;
+    color: #6d5449;
+}
+.descricao{
+    font-family: SUSE;
+    text-align: left;
+    font-size: 22px;
+    color: #4a3931;
+    margin-top: -20px;
+}
+.menu{
+    width: 100%;
+    background-color: rgba(222, 184, 135, 0.863);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 900px;
+    border-radius: 20px;
+}
+.itens p{
+    display: inline-block;
+    font-weight: bold;
+
+}
+.icon{
+    background-image: url(imagens/cafe\ xic.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-top: -200px;
+}
+.icon2{
+    background-image: url(imagens/iced.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-top: -200px;
+    margin-left: 600px;
+}
+.icon3{
+    background-image: url(imagens/grao\ icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 250px;
+    margin-top: -95px;
+    margin-left: 650px;
+    margin-bottom: -150px;
+}
+.mundo{
+    background-image: url(imagens/mundo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20px;
+    margin-top: -100px;
+    margin-left: 0;
+}
+h1 {
+    font-family: Anton;
+    font-size: 55px;
+    color: #4a3931;
+    text-align: center;
+    background-color: #a0724c;
+}
+h2{
+    color: #7c6053;
+}
+.titulo {
+    font-family: Anton;
+    text-align: center;
+    font-size: 35px;
+}
+hr {
+    background-color: #4a3931;
+    border-color: #aa8a33e5;
+    height: 2px;
+    width: 350px;
+}
+header, footer{
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.container{
+    display: flex;
+    flex: 1;
+}
+aside{
+    width: 50%; 
+}
+main{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1em;
+}
+section{
+    flex: 1;
+    background-color: rgba(222, 184, 135, 0);
+}
+.marca{
+    font-family: SUSE;
+    font-size: 20px;
+}
