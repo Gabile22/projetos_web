@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Matricula</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>FICHA DA MATRÍCULA</h1>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+    <fieldset>
+        <label for="data-matricula">Coloque a data da matrícula: <input type="text" id="data-matricula" name="data-matricula" required></label>
+        <label for="cod-matricula">Coloque o código da matrícula: <input type="text" id="cod-matricula" name="cod-matricula" required></label>
+    </fieldset>
+    <h1>DADOS DO ALUNO</h1>
+    <fieldset>
+        <label for="nome">Nome: <input type="text" name="nome" id="nome" required></label>
+        <label for="data-nasc">Data de Nasc: <input type="date" name="data-nasc" id="data-nasc" pattern="\d{4}-\d{2}-\d{2}" required></label>
+        <label for="naturalidade">Naturalidade: <input type="text" id="naturalidade" name="naturalidade" placeholder="Cidade - UF" 
+            pattern="^[A-Za-z\s]+ - [A-Z]{2}$" 
+            title="Formato: Cidade - UF (Ex: São Paulo - SP)" required></label>
+        <label for="UF">UF: <select name="uf" id="uf">
+            <option value="">Selecione uma UF</option>
+            <option value="AC">Acre (AC)</option>
+            <option value="AL">Alagoas (AL)</option>
+            <option value="AP">Amapá (AP)</option>
+            <option value="AM">Amazonas (AM)</option>
+            <option value="BA">Bahia (BA)</option>
+            <option value="CE">Ceará (CE)</option>
+            <option value="DF">Distrito Federal (DF)</option>
+            <option value="ES">Espírito Santo (ES)</option>
+            <option value="GO">Goiás (GO)</option>
+            <option value="MA">Maranhão (MA)</option>
+            <option value="MT">Mato Grosso (MT)</option>
+            <option value="MS">Mato Grosso do Sul (MS)</option>
+            <option value="MG">Minas Gerais (MG)</option>
+            <option value="PA">Pará (PA)</option>
+            <option value="PB">Paraíba (PB)</option>
+            <option value="PR">Paraná (PR)</option>
+            <option value="PE">Pernambuco (PE)</option>
+            <option value="PI">Piauí (PI)</option>
+            <option value="RJ">Rio de Janeiro (RJ)</option>
+            <option value="RN">Rio Grande do Norte (RN)</option>
+            <option value="RS">Rio Grande do Sul (RS)</option>
+            <option value="RO">Rondônia (RO)</option>
+            <option value="RR">Roraima (RR)</option>
+            <option value="SC">Santa Catarina (SC)</option>
+            <option value="SE">Sergipe (SE)</option>
+            <option value="SP">São Paulo (SP)</option>
+            <option value="TO">Tocantins (TO)</option>
+        </select></label>
+        <label for="CPF">CPF: <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" 
+            pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
+            title="Formato: XXX.XXX.XXX-XX" required></label>
+        <label for="RG">RG: <input type="text" id="rg" name="rg" placeholder="XX.12345678-9" 
+            pattern="^\d{2}\.\d{8}-[0-9X]$" 
+            title="Formato: XX.12345678-X" required></label>
+        <label for="orgao-exped">Orgão Exped: <input type="text" name="orgao-exped" id="orgao-exped" required></label>
+        <label for="sexo">Sexo: <label for="feminino"><input id="feminino" type="radio" name="account-type" class="inline" checked /> Feminino</label>
+        <label for="masculino"><input id="masculino" type="radio" name="account-type" class="inline" /> Masculino</label>
+        <label for="indefinido"><input id="indefinido" type="radio" name="account-type" class="inline" /> Prefiro não informar</label></label>
+    </fieldset>
+    <h1>FILIAÇÃO</h1>
+    <fieldset>
+        <label for="nome-pai">Pai: <input type="text" name="nome-pai" id="nome-pai"></label>
+        <label for="nome-mae">Mãe: <input type="text" name="nome-mae" id="nome-mae"></label>
+        <label for="telefone-pai">Telefone: <input type="text" id="telefone" name="telefone" placeholder="(00) 0000-0000" 
+            pattern="^\(\d{2}\) \d{4,5}-\d{4}$" 
+            title="Formato: (00) 0000-0000 ou (00) 00000-0000" required></label>
+        <label for="telefone-mae">Telefone: <input type="text" id="telefone" name="telefone" placeholder="(00) 0000-0000" 
+            pattern="^\(\d{2}\) \d{4,5}-\d{4}$" 
+            title="Formato: (00) 0000-0000 ou (00) 00000-0000" required></label>
+        <label for="nome-responsavel">Nome do Responsável: <input type="text" name="nome-responsavel" id="nome-responsavel"></label>
+        <label for="grau-parentesco">Grau de Parentesco: <input type="text" name="grau-parentesco" id="grau-parentesco"></label>
+        <label for="telefone-res">Telefone: <input type="text" name="telefone-res" id="telefone-res"></label>
+    </fieldset>
+    <h1>ENDEREÇO</h1>
+    <fieldset>
+        <label for="rua">Rua: <input type="text" name="rua" id="rua"></label>
+        <label for="n">N°: <input type="text" name="n" id="n"></label>
+        <label for="bairro">Bairro: <input type="text" name="bairro" id="bairro"></label>
+        <label for="complemento">Complemento: <input type="text" name="complemento" id="complemento"></label>
+        <label for="CEP">CEP: <input type="text" id="cep" name="cep" placeholder="00000-000" 
+            pattern="^\d{5}-?\d{3}$" 
+            title="Formato: 00000-000" required></label>
+        <label for="estado">Estado: 
+            <select name="estados" id="estados">
+                <option value="">Selecione um estado</option>
+                <option value="AC">Acre (AC)</option>
+                <option value="AL">Alagoas (AL)</option>
+                <option value="AP">Amapá (AP)</option>
+                <option value="AM">Amazonas (AM)</option>
+                <option value="BA">Bahia (BA)</option>
+                <option value="CE">Ceará (CE)</option>
+                <option value="DF">Distrito Federal (DF)</option>
+                <option value="ES">Espírito Santo (ES)</option>
+                <option value="GO">Goiás (GO)</option>
+                <option value="MA">Maranhão (MA)</option>
+                <option value="MT">Mato Grosso (MT)</option>
+                <option value="MS">Mato Grosso do Sul (MS)</option>
+                <option value="MG">Minas Gerais (MG)</option>
+                <option value="PA">Pará (PA)</option>
+                <option value="PB">Paraíba (PB)</option>
+                <option value="PR">Paraná (PR)</option>
+                <option value="PE">Pernambuco (PE)</option>
+                <option value="PI">Piauí (PI)</option>
+                <option value="RJ">Rio de Janeiro (RJ)</option>
+                <option value="RN">Rio Grande do Norte (RN)</option>
+                <option value="RS">Rio Grande do Sul (RS)</option>
+                <option value="RO">Rondônia (RO)</option>
+                <option value="RR">Roraima (RR)</option>
+                <option value="SC">Santa Catarina (SC)</option>
+                <option value="SE">Sergipe (SE)</option>
+                <option value="SP">São Paulo (SP)</option>
+                <option value="TO">Tocantins (TO)</option>
+            </select>
+        </label>
+    </fieldset>
+    <h1>ANO ESCOLAR</h1>
+    <fieldset>
+        <label for="anoescolar">Selecione o ano escolar: </label>
+        <label for="anoescolar"><input id="anoescolar" type="radio" name="anoescolar" class="inline" checked /> Ed. Infantil:Maternal</label>
+        <label for="anoescolar"><input id="anoescolar" type="radio" name="anoescolar" class="inline" /> Pré-escola</label>
+        <label for="anoescolar"><input id="anoescolar" type="radio" name="anoescolar" class="inline" checked /> Ensino fundamental</label>
+        <label for="anoescolar"><input id="anoescolar" type="radio" name="anoescolar" class="inline" /> Ensino Médio</label>
+        <label for="anoescolar">Ano escolar: <input id="anoescolar" name="anoescolar" type="text" required /></label>
+    </fieldset>
+    <h1>RELAÇÃO DE DOCUMENTOS PARA A MATRÍCULA</h1>
+    <fieldset>
+        <label for="qtd">QTD: <input type="text" name="qtd" id="qtd"></label>
+        <label for="doc">Documento: <input type="text" name="doc" id="doc"></label>
+    </fieldset>
+    <h1>OBSERVAÇÕES</h1>
+    <fieldset>
+    <label for="digite">Digite aqui:
+        <textarea id="digite" name="digite" rows="3" cols="30" ></textarea>
+      </label>
+    </fieldset>
+    <input type="submit" value="Submit" />
+</body>
+</html>
