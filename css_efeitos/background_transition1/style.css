@@ -1,0 +1,16 @@
+.background-transition{
+    background-color: purple;
+    color: #fff;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;/*centraliza na horizontal*/
+    align-content: center;/*centraliza na vertical*/
+    flex-wrap: wrap;/*quebra de linha*/
+    transition: background-color 2s ease-in;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Houver é um pseudo-classe que indica um comportamento*/
+.background-transition:hover{
+    background-color: palevioletred;
+}
